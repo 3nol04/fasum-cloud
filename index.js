@@ -28,6 +28,7 @@ app.post('/send-to-topic', async (req, res) => {
     }
 
     const message = {
+        topic,
         notification: {
             title: title,
             body: body,
