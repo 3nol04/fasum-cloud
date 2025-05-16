@@ -9,7 +9,6 @@ require('dotenv').config();
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
 });
-
 const app = express();
 
 // Middleware
