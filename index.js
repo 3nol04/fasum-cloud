@@ -15,9 +15,10 @@ app.get('/' , (req, res) => {
     res.send("Hai. ini adalah res api dari fasum")
 })
 
+
         app.post("/sent-to-topic", async (req, res) => {
         const {topic, title,body, senderName,senderPhotoUrl} = req.body;
-        if(!topic || !title || !body || !senderName || !senderPhotoUrl){
+        if(!topic || !title || !body){
             return res.status(400).json({message:"token,  title dan body harus diisi"})
         }
 
